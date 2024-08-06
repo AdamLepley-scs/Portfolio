@@ -1,0 +1,49 @@
+@mixin button ($bkcolor, $brcolor:null, $lheight:50px, $bradius:3px) {
+
+    background-color: $bkcolor;
+    border-color: $brcolor;
+    border-radius: $bradius;
+    line-height: $lheight;
+    color: $white;
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    text-decoration: none;
+    :hover {
+        text-decoration: none;
+    }
+}
+
+@mixin mq($breakpoint) {
+    @if $breakpoint == "x-small" {
+      @media (min-width: $break--xs) and (max-width: $break--s) {
+        @content;
+      }
+    } @else if $breakpoint == "small" {
+      @media (min-width: #{$break--s}) and (max-width: $break--m) {
+        @content;
+      }
+    } @else if $breakpoint == "medium" {
+      @media (min-width: #{$break--m}) {
+        @content;
+      }
+    } @else if $breakpoint == "large" {
+      @media (min-width: #{$break--l}) {
+        @content;
+      }
+    } @else if $breakpoint == "x-large" {
+      @media (min-width: #{$break--xl}) {
+        @content;
+      }
+    } @else {
+      @error "#{$breakpoint} isn't a valid media query size!";
+    }
+  }
+
+  @mixin cardhover($colour) { 
+    background-color:$colour; 
+    border-color:$colour;
+    transition: .5s ease;
+    top: -10px;
+  }
