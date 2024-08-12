@@ -442,7 +442,6 @@ body {
 
 #banner-section {
   grid-area: banner;
-  // display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -574,7 +573,6 @@ body {
     }
 
 
-	//background-clip: content-box;
     
 
 }
@@ -587,20 +585,16 @@ body {
     height: auto;
     width: auto;
 
-    //max-height: 60v;
-
 
     &__image {
         height: auto;
         width: 90%;
 
         min-width: 90%;
-        //max-height: 60vh;
 
         object-fit: cover;
 
-        //max-width: 200px;
-        //min-width: 200px;
+        
 
         padding: 5px;
         border-radius: 10px;
@@ -649,7 +643,7 @@ body {
   gap: 20px 20px;
   padding: 20px;
 
-  //width: 300px;
+  ;
   min-width: 70vw;
 
   @include mq(small) {
@@ -727,7 +721,6 @@ body {
 }
 
 #contact-message {
-  //  This is only because it's currently allowing bad resizing
   resize: none;
 }
 
