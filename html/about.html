@@ -6,78 +6,116 @@
         <link rel="stylesheet" type="text/css" href="../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
         <title>Adam Lepley Portfolio</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class="main-nav">
-            <div class="main-nav_avatar">
-                <a href="index.html">
-                    <h1>AL</h1>
-                </a>
-            </div>
-            <ul class="main-nav_list">
-                <li class="nav-item">
-                    <a href="about.html"><p>About Me</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#portfolio"><p>My Portfolio</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="examples.html"><p>Code Examples</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="scheme.html"><p>SCS Scheme</p></a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.html#contact"><p>Contact Me</p></a>
-                </li>
-            </ul>
-            <div class="main-nav_socials">
-                <a target="_blank" href="https://www.linkedin.com/in/adam-lepley-9893aa173">
-                    <div class="nav-social-icon" id="nav-social-li">
-                        <span class="icon-linkedin2"></span>
-                    </div>
-                </a>
-                <a target="_blank" href="https://github.com/AdamLepley-scs">
-                    <div class="nav-social-icon" id="nav-social-git">
-                        <span class="icon-github"></span>
-                    </div>
-                </a>
-            </div>
-        </nav>
-
-        <header class="hero-header">
-            <div class="container">
-                <h1 class="hero-header_title">Adam Lepley</h1>
-                <h2 class="hero-header_subtitle">Web Developer</h2>
-                <div class="hero-header__scroll-down">
-                    <a href="#portfolio">
-                      <p>Scroll Down</p>
-                    </a>
-                </div>
-
-            </div>
-
-        </header>
-        <div class="container">
-            <main id="about">
-              <h1>About Me</h1>
-              <p>I'm training to be a Web developer with Netmatters.</p>
-              <h3>Fun facts about me</h2>
-              <ul>
-                <li>I was born with a club foot</li>
-                <li>I am left handed</li>
-                <li>In my childhood I was part of the 1st Canvey Sea Scout Group</li>
-
-              </ul>
-            </main>
+        <img src="../img/background.jpg" alt="Banner Image" id="banner-image">
+        <div id="page-wrapper">
         
-            <div class="to-top">
-              <a href="#">
-                <p>Back to Top</p>
-              </a>
-            </div>
-          </div>
-   
+
+            <nav id="sidenav" class="sidenav">
+                <div id="sidenav-wrapper" class="sidenav-wrapper">
+                    
+                    <div id="initials" class="initials">
+                        <a href="../index.html">
+                            AL
+                        </a>
+                    </div>
+    
+                    <div id="sidenav-menu" class="sidenav-menu">
+                        <ul>
+                            <li><a href="about.html">About<br>Me</a></li>
+                            <li><a href="../index.html">My<br>Portfolio</a></li>
+                            <li><a href="examples.html">Coding<br>Examples</a></li>
+                            <li><a href="scheme.html">SCS<br>Scheme</a></li>
+                            <li><a href="../index.html">Contact<br>Me</a></li>
+                        </ul>
+                    </div>
+    
+                    <div id="sidenav-socials" class="sidenav-socials">
+                        <a href="www.linkedin.com/in/adam-lepley-9893aa173">
+                            <div class="socials-icon" id="socials-li">
+                                <span class="icon-linkedin2"></span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/AdamLepley-scs">
+                            <div class="socials-icon icon-github" id="socials-gh">
+                            </div>
+                        </a>
+    
+                    </div>
+                </div>
+            </nav>
+    
+    
+    
+    
+            <header id="banner-section">
+
+            <nav>
+                <div id="hamburger">
+                    <div id="burger"></div>
+                </div>
+            </nav>
+    
+                <div id="banner-overlay">
+                    <h1 id="banner-text">
+                        Adam Lepley
+                    </h1>
+                    <h3 id="banner-subtext">
+                        Software Developer
+                    </h3>
+    
+                </div>
+                <a id="banner-link" href="#scs-header">
+                    Scroll Down
+                    <br>
+                </a>
+            </header>
+    
+            <main id="main">
+
+                <div id="banner-gradient"></div>
+    
+                <section id="about-section" class="section">
+    
+                    <div id="scs-spacer"></div>
+    
+                    
+                    <header id="scs-header">
+                        <h2 class="section-title">About Me</h2>
+                    </header>
+    
+                    <div id="scs-wrapper">
+    
+                        <h3>Personal</h3>
+                        <p>
+                            I'm an aspiring web developer currently training with netmatters
+                        </p>
+    
+                        <h3>Fun Facts about me</h3>
+                        <ul>
+                            <li>I spent much of my childhood as a part of the 1st Canvey Sea Scout Group</li>
+                            <li>I'm left handed</li>
+                            <li>I was born with a club foot</li>
+                        </ul>
+    
+                       
+    
+                    </div>
+                </section>
+    
+            </main>
+    
+            <footer id="footer">
+                <a id="footer-link" href="#banner-section">
+                    <br>
+                    Back to Top
+                </a>
+                
+            </footer>
+        </div>
     </body>
-</html>
+    </html>

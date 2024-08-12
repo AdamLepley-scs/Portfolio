@@ -2,6 +2,58 @@ $white              : #ffffff;
 $grey-light         : #f0f0f0;
 $black              : #000000;
 
+$green-darkest      : #344E41;
+$green-dark         : #3A5A40;
+$green-mid          : #588157;
+$green-light        : #A3B18A;
+$green-lightest     : #DAD7CD;
+
+//  https://coolors.co/01050d-030f26-122835-728380-c1cae2
+$rich-black         : #01050dff;
+$oxford-blue        : #030f26ff;
+$gunmetal           : #122835ff;
+$battleship-gray    : #728380ff;
+$french-gray        : #c1cae2ff;
+
+//  https://coolors.co/030f26-0e44aa-347398-728380-c1cae2
+$oxford-blue        : #030f26ff;
+$cobalt-blue        : #0e44aaff;
+$cerulean           : #347398ff;
+
+//  Colours to compliment the blues
+$mikado-yellow      : #FFC800;
+$orange-peel        : #FF9D00;
+
+$water-darkest       : $rich-black;
+$water-dark          : $oxford-blue;
+$water-mid           : $gunmetal;
+$water-light         : $battleship-gray;
+$water-lightest      : $french-gray;
+$water-blue          : $cobalt-blue;
+
+
+$bg-colour-dark     : rgba($water-darkest, 0.90);
+$bg-colour          : $water-dark;
+
+
+$blue-tint-trans    : rgba(12, 0, 104, 0.1);
+$green-tint-trans   : rgba($bg-colour-dark, 0.1);
+
+$txt-light          : white;
+$txt-lightish       : $water-lightest;
+$txt-green          : $water-light;
+$txt-contrast       : $orange-peel;
+
+$link               : $water-light;
+$link-hover         : $water-lightest;
+$link2               : $orange-peel;
+$link2-hover         : $mikado-yellow;
+
+$scroll             : white;
+$scroll-hover       : $water-lightest;
+
+
+
 
 $font-xlight: 300;
 $font-light: 400;
@@ -15,3 +67,16 @@ $break--s: 460px;
 $break--m: 768px;
 $break--l: 992px;
 $break--xl: 1260px;
+
+$font-titillium     : "Titillium Web", 'Verdana', 'Trebuchet MS', sans-serif;
+// $font-calibri       : 'Calibri', sans-serif;    
+$font-poppins       : Poppins, 'Verdana', 'Trebuchet MS', sans-serif;
+$font-roboto        : Roboto, 'Verdana', 'Trebuchet MS', sans-serif;
+$font-verdana       : 'Verdana', sans-serif;
+$font-trebuchet     : 'Trebuchet MS', sans-serif;
+$font-tahoma        : 'Tahoma', sans-serif;
+$font-arial         : 'Arial', sans-serif;
+
+
+$font-primary       : $font-titillium;
+$font-secondary     : $font-poppins;
