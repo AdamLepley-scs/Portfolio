@@ -69,13 +69,13 @@ $break--l: 992px;
 $break--xl: 1260px;
 
 $font-titillium     : "Titillium Web", 'Verdana', 'Trebuchet MS', sans-serif;
-$font-poppins       : Poppins, 'Verdana', 'Trebuchet MS', sans-serif;
-$font-roboto        : Roboto, 'Verdana', 'Trebuchet MS', sans-serif;
+$font-poppins       : 'Poppins', 'Verdana', 'Trebuchet MS', sans-serif;
+$font-roboto        : 'Roboto', 'Verdana', 'Trebuchet MS', sans-serif;
 $font-verdana       : 'Verdana', sans-serif;
 $font-trebuchet     : 'Trebuchet MS', sans-serif;
 $font-tahoma        : 'Tahoma', sans-serif;
 $font-arial         : 'Arial', sans-serif;
 
 
-$font-primary       : $font-titillium;
-$font-secondary     : $font-poppins;
+$font-primary       : $font-poppins;
+$font-secondary     : $font-titillium;
