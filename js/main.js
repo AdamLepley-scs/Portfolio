@@ -52,5 +52,40 @@ function submitContactForm(){
     }
 
 }
+
+//text animation
+document.addEventListener("DOMContentLoaded", function () {
+    const textElements = [
+        { element: document.getElementById("banner-text"), text: "Adam Lepley" },
+        { element: document.getElementById("banner-subtext"), text: "Software Developer" }
+    ];
+    const typingSpeed = 100; // Speed in milliseconds between each character
+
+    function typeText(element, text, callback) {
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, typingSpeed);
+            } else if (callback) {
+                setTimeout(callback, 500); // Slight delay before starting the next text
+            }
+        }
+
+        type();
+    }
+
+    function startTypingEffect() {
+        if (textElements.length > 0) {
+            const { element, text } = textElements.shift();
+            typeText(element, text, startTypingEffect);
+        }
+    }
+
+    // Start the typing effect
+    startTypingEffect();
+});
      
     
